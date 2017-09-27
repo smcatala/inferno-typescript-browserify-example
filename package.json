@@ -1,0 +1,32 @@
+{
+  "name": "tsify-jsx",
+  "version": "0.1.0",
+  "description": "A TypeScript Inferno JSX example building with browserify/tsify",
+  "scripts": {
+    "prebuild": "rimraf dist/* && cpx src/**/*.html dist/",
+    "build": "browserify -p tsify src/index.tsx -o dist/index.js",
+    "start": "http-server dist -o"
+  },
+  "authors": [
+    "Greg Smith <smr.kyu@gmail.com> (http://github.com/smrq)",
+    "Dominic Gannaway (http://github.com/trueadm)",
+    "Stephane Catala <smcatala@gmail.com> (http://github.com/smcatala)"
+  ],
+  "license": "MIT",
+  "main": "dist",
+  "keywords": [ "inferno", "jsx", "tsx", "typescript", "browserify", "tsify" ],
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "cpx": "^1.5.0",
+    "http-server": "^0.10.0",
+    "rimraf": "^2.6.2",
+    "tsify": "3.0.3",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "inferno": "^3.9.0",
+    "inferno-component": "^3.9.0",
+    "inferno-create-element": "^3.9.0"
+  }
+}
