@@ -1,5 +1,5 @@
 {
-  "name": "tsify-jsx",
+  "name": "inferno-typescript-browserify-example",
   "version": "0.1.0",
   "description": "A TypeScript Inferno JSX example building with browserify/tsify",
   "scripts": {
@@ -14,19 +14,25 @@
   ],
   "license": "MIT",
   "main": "dist",
-  "keywords": [ "inferno", "jsx", "tsx", "typescript", "browserify", "tsify" ],
+  "keywords": [
+    "inferno",
+    "jsx",
+    "tsx",
+    "typescript",
+    "browserify",
+    "tsify"
+  ],
   "devDependencies": {
-    "browserify": "^14.4.0",
+    "browserify": "^16.2.2",
     "cpx": "^1.5.0",
-    "http-server": "^0.10.0",
+    "http-server": "^0.11.1",
     "rimraf": "^2.6.2",
-    "tsify": "3.0.3",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.3"
+    "tsify": "4.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
   },
   "dependencies": {
-    "inferno": "^3.9.0",
-    "inferno-component": "^3.9.0",
-    "inferno-create-element": "^3.9.0"
+    "inferno": "^5.1.1",
+    "inferno-create-element": "^5.1.1"
   }
 }

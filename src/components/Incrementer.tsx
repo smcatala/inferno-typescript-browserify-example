@@ -1,5 +1,5 @@
-import createElement from 'inferno-create-element';
-import Component from 'inferno-component';
+import { createElement } from 'inferno-create-element';
+import { Component } from 'inferno';
 import { addOne } from '../utils/math';
 import { Visualizer } from './Visualizer';
 

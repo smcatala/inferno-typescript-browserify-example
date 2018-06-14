@@ -1,6 +1,5 @@
-import createElement from 'inferno-create-element';
-import { render, version } from 'inferno';
-import Component from 'inferno-component';
+import { createElement } from 'inferno-create-element';
+import { Component, render, version } from 'inferno';
 import { Incrementer } from './components/Incrementer';
 
 const container = document.getElementById('app');
