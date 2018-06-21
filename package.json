@@ -1,6 +1,6 @@
 {
   "name": "inferno-typescript-browserify-example",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A TypeScript Inferno JSX example building with browserify/tsify",
   "scripts": {
     "prebuild": "mkdirp dist && rimraf dist/* && cpx src/**/*.{html,css,png} dist/",

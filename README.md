@@ -2,7 +2,7 @@
 
 A TypeScript Inferno JSX example building with browserify/tsify,
 including tree-shaking and minification.
-Also includes an example of [development server](#Debugging)
+Also includes an example of [development server](#debugging)
 with source maps and hot reload.
 
 Based on [inferno-typescript-example](https://github.com/infernojs/inferno-typescript-example/)
@@ -24,8 +24,8 @@ npm run build
 * tree-shaking with [common-shakeify](https://www.npmjs.com/package/common-shakeify)
 * minified bundle names with [bundle-collapser](https://www.npmjs.com/package/bundle-collapser)
 
-the bundled output from browserify is minified with [uglify-es](https://www.npmjs.com/package/):
-gzipped, this example fits in 13k bytes.
+the bundled output from browserify is minified with [uglify-es](https://www.npmjs.com/package/uglify-es):
+gzipped, this example fits in **13k bytes**.
 
 ## Running
 ```sh
