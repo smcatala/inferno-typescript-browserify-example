@@ -1,3 +1,4 @@
+/** @jsx createElement */
 import { createElement } from 'inferno-create-element';
 
 /*
@@ -5,5 +6,5 @@ import { createElement } from 'inferno-create-element';
  * Functional components provide great performance but does not have state
  */
 export function Visualizer({ number: number }) {
-	return <div className="visualizer">{number}</div>;
+  return <div className="visualizer">{number}</div>;
 }

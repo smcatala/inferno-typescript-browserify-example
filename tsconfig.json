@@ -1,12 +1,12 @@
 {
-	"compilerOptions": {
-		"lib":[
-			"es5", "es6", "dom"
-		],
-		"types": [
-			"inferno"
-		],
-		"jsx": "react",
-		"jsxFactory": "createElement"
-	}
+  "compilerOptions": {
+    "lib":[
+      "es5", "es6", "dom"
+    ],
+    "types": [
+      "inferno",
+      "node"
+    ],
+    "jsx": "react"
+  }
 }
