@@ -1,6 +1,6 @@
 /** @jsx createElement */
 import { createElement } from 'inferno-create-element';
-import { Component } from 'inferno';
+import { Component, Fragment } from 'inferno';
 import { addOne } from '../utils/math';
 import { Visualizer } from './Visualizer';
 
@@ -30,11 +30,11 @@ export class Incrementer extends Component<Props, { value: number }> {
     // this.props.bar = 1;
 
     return (
-      <div>
+      <Fragment>
         {this.props.name}
         <button onClick={this.doMath}>Increment</button>
         <Visualizer number={this.state.value + 'foobar'} />
-      </div>
+      </Fragment>
     );
   }
 }
