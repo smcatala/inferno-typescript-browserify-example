@@ -25,7 +25,7 @@ npm run build
 * minified bundle names with [bundle-collapser](https://www.npmjs.com/package/bundle-collapser)
 
 the bundled output from browserify is minified with [uglify-es](https://www.npmjs.com/package/uglify-es):
-gzipped, this example fits in **8.2k bytes**.
+gzipped, this example fits in **8k bytes**.
 
 ## Running
 ```sh
