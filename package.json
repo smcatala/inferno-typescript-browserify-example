@@ -4,7 +4,7 @@
   "description": "A TypeScript Inferno JSX example building with browserify/tsify",
   "scripts": {
     "prebuild": "mkdirp dist && rimraf dist/* && cpx src/**/*.{html,css,png} dist/",
-    "build": "browserify -g [ envify purge --NODE_ENV production --PKG_NAME $npm_package_name --PKG_VERSION $npm_package_version ] -p [ tsify -p src ] src/index.tsx -g uglifyify -p bundle-collapser/plugin -p [ common-shakeify -v ] | uglifyjs -c -m toplevel > dist/index.js",
+    "build": "browserify -g [ envify purge --NODE_ENV production --PKG_NAME $npm_package_name --PKG_VERSION $npm_package_version ] -p [ tsify -p src ] src/index.tsx -g uglifyify -p bundle-collapser/plugin -p [ common-shakeify -v ] | uglifyjs -c -m --toplevel --ecma 7 > dist/index.js",
     "debug": "budo --open --live --dir src/ src/index.tsx:index.js -- -g [ envify purge --NODE_ENV=development --PKG_NAME=$npm_package_name --PKG_VERSION=$npm_package_version ] -p [ tsify --sourceMap=true -p src ] --debug -v",
     "start": "http-server dist -o"
   },
