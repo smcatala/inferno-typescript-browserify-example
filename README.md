@@ -21,18 +21,20 @@ npm run build
 ```
 [browserify](https://www.npmjs.com/package/browserify) configuration:
 * `process.env` constants with [envify](https://www.npmjs.com/package/envify)
+* dead-code elimination with [uglifyify](https://www.npmjs.com/package/uglifyify)
 * tree-shaking with [common-shakeify](https://www.npmjs.com/package/common-shakeify)
-* minified bundle names with [bundle-collapser](https://www.npmjs.com/package/bundle-collapser)
+* "flat" bundle with [browser-flat-pack](https://www.npmjs.com/package/browser-flat-pack)
 
-the bundled output from browserify is minified with [uglify-es](https://www.npmjs.com/package/uglify-es):
+the bundled output from browserify is minified with [terser](https://www.npmjs.com/package/terser):<br/>
 gzipped, this example fits in **8k bytes**.
 
 ## Running
+serve the build output from a local server:
 ```sh
 npm start
 ```
 
-## Debugging
+## Debugging: source-maps & hot-module-reload
 based on [budo](https://www.npmjs.com/package/budo) with source maps and hot reload.
 ```sh
 npm run debug
